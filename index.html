@@ -18,20 +18,35 @@
 
             <a href="#home" class="logo">
                 <img src="assets/logo.png" alt="Caliphate International Schools Logo">
-                <span>Caliphate International Schools</span>
+                <span data-i18n="school.name">Caliphate International Schools</span>
             </a>
 
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="header-right">
+                <nav id="navbar">
+                    <a href="#home" data-i18n="nav.home">Home</a>
+                    <a href="#about" data-i18n="nav.about">About Us</a>
+                    <a href="#history" data-i18n="nav.history">History</a>
+                    <a href="#academics" data-i18n="nav.academics">Academics</a>
+                    <a href="#admissions" data-i18n="nav.admissions">Admissions</a>
+                    <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </nav>
 
-            <nav id="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#history">History</a>
-                <a href="#academics">Academics</a>
-                <a href="#admissions">Admissions</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </nav>
+                <div class="language-switcher">
+                    <label for="languageSelect" data-i18n="lang.label">Language</label>
+                    <select id="languageSelect" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="ha">Hausa</option>
+                        <option value="ig">Igbo</option>
+                        <option value="yo">Yaroba</option>
+                        <option value="ff">Fulani</option>
+                        <option value="fr">French</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
 
         </div>
     </header>
@@ -43,20 +58,20 @@
         <div class="hero-overlay">
             <div class="container hero-content">
 
-                <h1>Caliphate International Schools</h1>
+                <h1 data-i18n="school.name">Caliphate International Schools</h1>
 
-                <p class="location">
+                <p class="location" data-i18n="location">
                     Gusau, Zamfara State, Nigeria
                 </p>
 
-                <p>
+                <p data-i18n="hero.tagline">
                     Building Future Leaders Through Quality Education,
                     Discipline and Moral Excellence.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#admissions" class="btn">Apply for Admission</a>
-                    <a href="#about" class="btn btn-light">Learn More</a>
+                    <a href="#admissions" class="btn" data-i18n="hero.apply">Apply for Admission</a>
+                    <a href="#about" class="btn btn-light" data-i18n="hero.learnMore">Learn More</a>
                 </div>
 
             </div>
@@ -71,8 +86,8 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>About Us</h2>
-                <p>Welcome to Caliphate International Schools</p>
+                <h2 data-i18n="about.title">About Us</h2>
+                <p data-i18n="about.subtitle">Welcome to Caliphate International Schools</p>
             </div>
 
             <div class="about-grid">
@@ -84,41 +99,26 @@
 
                 <div class="about-text">
 
-                    <h3>Quality Education for a Better Future</h3>
+                    <h3 data-i18n="about.heading">Quality Education for a Better Future</h3>
 
-                    <p>
+                    <p data-i18n="about.p1">
                         Caliphate International Schools is an educational
                         institution located in Gusau, Zamfara State.
                         Our aim is to provide quality education in a safe,
                         disciplined and conducive learning environment.
                     </p>
 
-                    <p>
+                    <p data-i18n="about.p2">
                         We combine academic excellence with moral training,
                         discipline, creativity and leadership development.
                     </p>
 
                     <div class="features">
 
-                        <div>
-                            <strong>✓</strong>
-                            Quality Education
-                        </div>
-
-                        <div>
-                            <strong>✓</strong>
-                            Qualified Teachers
-                        </div>
-
-                        <div>
-                            <strong>✓</strong>
-                            Moral Development
-                        </div>
-
-                        <div>
-                            <strong>✓</strong>
-                            Safe Learning Environment
-                        </div>
+                        <div><strong>✓</strong> <span data-i18n="feature.quality">Quality Education</span></div>
+                        <div><strong>✓</strong> <span data-i18n="feature.teachers">Qualified Teachers</span></div>
+                        <div><strong>✓</strong> <span data-i18n="feature.moral">Moral Development</span></div>
+                        <div><strong>✓</strong> <span data-i18n="feature.safe">Safe Learning Environment</span></div>
 
                     </div>
 
@@ -137,27 +137,27 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Our History</h2>
-                <p>The journey of Caliphate International Schools</p>
+                <h2 data-i18n="history.title">Our History</h2>
+                <p data-i18n="history.subtitle">The journey of Caliphate International Schools</p>
             </div>
 
             <div class="history-content">
 
-                <p>
+                <p data-i18n="history.p1">
                     Caliphate International Schools was established 2007 with
                     the vision of providing quality and affordable education
                     to children in Gusau and surrounding communities.
                 </p>
 
-                <p>
+                <p data-i18n="history.p2">
                     Since its establishment, the school has continued to
                     focus on academic development, good character,
                     discipline and preparing students for the future.
                 </p>
 
                 <div class="history-box">
-                    <h3>Our Vision</h3>
-                    <p>
+                    <h3 data-i18n="history.visionTitle">Our Vision</h3>
+                    <p data-i18n="history.visionText">
                         To raise responsible, educated and morally upright
                         future leaders who will contribute positively to
                         society.
@@ -165,8 +165,8 @@
                 </div>
 
                 <div class="history-box">
-                    <h3>Our Mission</h3>
-                    <p>
+                    <h3 data-i18n="history.missionTitle">Our Mission</h3>
+                    <p data-i18n="history.missionText">
                         To provide quality education through effective
                         teaching, modern learning methods and character
                         development.
@@ -186,16 +186,16 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Academics</h2>
-                <p>Our Educational Programmes</p>
+                <h2 data-i18n="academics.title">Academics</h2>
+                <p data-i18n="academics.subtitle">Our Educational Programmes</p>
             </div>
 
             <div class="cards">
 
                 <div class="card">
                     <div class="card-icon">📚</div>
-                    <h3>Nursery</h3>
-                    <p>
+                    <h3 data-i18n="academics.nurseryTitle">Nursery</h3>
+                    <p data-i18n="academics.nurseryText">
                         Early childhood education designed to develop
                         foundational skills and good habits.
                     </p>
@@ -203,8 +203,8 @@
 
                 <div class="card">
                     <div class="card-icon">🎓</div>
-                    <h3>Primary</h3>
-                    <p>
+                    <h3 data-i18n="academics.primaryTitle">Primary</h3>
+                    <p data-i18n="academics.primaryText">
                         Strong academic foundation with emphasis on
                         literacy, numeracy, science and character.
                     </p>
@@ -212,8 +212,8 @@
 
                 <div class="card">
                     <div class="card-icon">🏫</div>
-                    <h3>Secondary</h3>
-                    <p>
+                    <h3 data-i18n="academics.secondaryTitle">Secondary</h3>
+                    <p data-i18n="academics.secondaryText">
                         Academic preparation that equips students for
                         higher education and responsible citizenship.
                     </p>
@@ -221,9 +221,8 @@
 
                 <div class="card">
                     <div class="card-icon">💻</div>
-                    <h3>ICT Education & College Of Nursing</h3>
-                  
-                    <p>
+                    <h3 data-i18n="academics.ictTitle">ICT Education & College Of Nursing</h3>
+                    <p data-i18n="academics.ictText">
                         Students are introduced to computer skills and
                         modern technology.
                     </p>
@@ -242,30 +241,30 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Admissions</h2>
-                <p>Give your child the opportunity to learn and grow.</p>
+                <h2 data-i18n="admissions.title">Admissions</h2>
+                <p data-i18n="admissions.subtitle">Give your child the opportunity to learn and grow.</p>
             </div>
 
             <div class="admission-content">
 
-                <h3>Admission Information</h3>
+                <h3 data-i18n="admissions.heading">Admission Information</h3>
 
-                <p>
+                <p data-i18n="admissions.intro">
                     We welcome parents and guardians who wish to enrol
                     their children at Caliphate International Schools.
                 </p>
 
-                <h4>Admission Process</h4>
+                <h4 data-i18n="admissions.processTitle">Admission Process</h4>
 
                 <ol>
-                    <li>Visit the school or contact the administration.</li>
-                    <li>Obtain and complete the admission form.</li>
-                    <li>Submit the required documents.</li>
-                    <li>Attend the required assessment or interview.</li>
-                    <li>Complete registration after admission.</li>
+                    <li data-i18n="admissions.step1">Visit the school or contact the administration.</li>
+                    <li data-i18n="admissions.step2">Obtain and complete the admission form.</li>
+                    <li data-i18n="admissions.step3">Submit the required documents.</li>
+                    <li data-i18n="admissions.step4">Attend the required assessment or interview.</li>
+                    <li data-i18n="admissions.step5">Complete registration after admission.</li>
                 </ol>
 
-                <a href="#contact" class="btn">
+                <a href="#contact" class="btn" data-i18n="admissions.contactBtn">
                     Contact School
                 </a>
 
@@ -282,8 +281,8 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Gallery</h2>
-                <p>Some moments from our school</p>
+                <h2 data-i18n="gallery.title">Gallery</h2>
+                <p data-i18n="gallery.subtitle">Some moments from our school</p>
             </div>
 
             <div class="gallery">
@@ -308,35 +307,34 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>We would love to hear from you</p>
+                <h2 data-i18n="contact.title">Contact Us</h2>
+                <p data-i18n="contact.subtitle">We would love to hear from you</p>
             </div>
 
             <div class="contact-grid">
 
                 <div class="contact-info">
 
-                    <h3>School Information</h3>
+                    <h3 data-i18n="contact.infoTitle">School Information</h3>
 
                     <p>
-                        📍 <strong>Address:</strong><br>
-                        Along Eastern Bye-pass, Gusau,
-                        Zamfara State, Nigeria
+                        📍 <strong data-i18n="contact.addressLabel">Address:</strong><br>
+                        <span data-i18n="contact.address">Along Eastern Bye-pass, Gusau, Zamfara State, Nigeria</span>
                     </p>
 
                     <p>
-                        📞 <strong>Phone:</strong><br>
-                        0806 572 2773
+                        📞 <strong data-i18n="contact.phoneLabel">Phone:</strong><br>
+                        <span>0806 572 2773</span>
                     </p>
 
                     <p>
-                        ✉️ <strong>Email:</strong><br>
-                        cisgusau07@gmail.com
+                        ✉️ <strong data-i18n="contact.emailLabel">Email:</strong><br>
+                        <span>cisgusau07@gmail.com</span>
                     </p>
 
                     <p>
-                        🌐 <strong>Facebook:</strong><br>
-                        Caliphate International Schools
+                        🌐 <strong data-i18n="contact.facebookLabel">Facebook:</strong><br>
+                        <span data-i18n="contact.facebook">Caliphate International Schools</span>
                     </p>
 
                 </div>
@@ -346,25 +344,29 @@
 
                     <input type="text"
                            id="name"
+                           data-placeholder="contact.namePlaceholder"
                            placeholder="Your Name"
                            required>
 
                     <input type="email"
                            id="email"
+                           data-placeholder="contact.emailPlaceholder"
                            placeholder="Your Email"
                            required>
 
                     <input type="text"
                            id="subject"
+                           data-placeholder="contact.subjectPlaceholder"
                            placeholder="Subject"
                            required>
 
                     <textarea id="message"
                               rows="6"
+                              data-placeholder="contact.messagePlaceholder"
                               placeholder="Your Message"
                               required></textarea>
 
-                    <button type="submit" class="btn">
+                    <button type="submit" class="btn" data-i18n="contact.sendBtn">
                         Send Message
                     </button>
 
@@ -383,15 +385,15 @@
         <div class="container footer-content">
 
             <div>
-                <h3>Caliphate International Schools</h3>
-                <p>Gusau, Zamfara State</p>
+                <h3 data-i18n="school.name">Caliphate International Schools</h3>
+                <p data-i18n="location">Gusau, Zamfara State</p>
             </div>
 
             <div>
                 <p>
                     © <span id="year"></span>
-                    Caliphate International Schools.
-                    All Rights Reserved.
+                    <span data-i18n="school.name">Caliphate International Schools.</span>
+                    <span data-i18n="footer.rights">All Rights Reserved.</span>
                 </p>
             </div>
 
@@ -405,3 +407,1508 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"},
+{"path":"style.css","content":"/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #075e35;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 999px;
+    padding: 7px 12px;
+}
+
+.language-switcher label {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.language-switcher select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-switcher select option {
+    color: #333;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    background-image:
+        linear-gradient(rgba(0,50,25,0.65), rgba(0,50,25,0.65)),
+        url("assets/school-building.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 21px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.location {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #075e35;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #043c23;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    background: white;
+    color: #075e35;
+}
+
+.btn-light:hover {
+    background: #ffd700;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 80px 0;
+}
+
+.section:nth-child(even) {
+    background: #f6f8f7;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #075e35;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-text h3 {
+    color: #075e35;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.features strong {
+    color: #075e35;
+    margin-right: 8px;
+}
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.history-content p {
+    margin-bottom: 20px;
+}
+
+.history-box {
+    padding: 25px;
+    margin: 20px 0;
+    background: white;
+    border-left: 5px solid #075e35;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.history-box h3 {
+    color: #075e35;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #075e35;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ADMISSIONS
+========================= */
+
+.admission-section {
+    background: #f6f8f7;
+}
+
+.admission-content {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.admission-content h3 {
+    color: #075e35;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.admission-content h4 {
+    margin-top: 25px;
+    color: #075e35;
+}
+
+.admission-content ol {
+    margin: 15px 0 20px 25px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h3 {
+    color: #075e35;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #075e35;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #043c23;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content h3 {
+    color: #ffd700;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-right {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        background: #075e35;
+        padding: 20px;
+    }
+
+    .header-right.active {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .language-switcher {
+        justify-content: center;
+        width: fit-content;
+        align-self: center;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo span {
+        font-size: 14px;
+    }
+
+    .hero,
+    .hero-overlay {
+        min-height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .cards,
+    .gallery,
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .gallery img {
+        height: 280px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"},
+{"path":"script.js","content":"// ============================
+// MOBILE MENU
+// ============================
+
+function toggleMenu() {
+    const headerRight = document.querySelector(".header-right");
+    headerRight.classList.toggle("active");
+}
+
+
+// ============================
+// CLOSE MOBILE MENU
+// ============================
+
+const navLinks = document.querySelectorAll("#navbar a");
+
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        const headerRight = document.querySelector(".header-right");
+        if (headerRight) {
+            headerRight.classList.remove("active");
+        }
+    });
+});
+
+
+// ============================
+// CURRENT YEAR
+// ============================
+
+const year = document.getElementById("year");
+
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
+
+
+// ============================
+// TRANSLATOR
+// ============================
+
+const translations = {
+    en: {
+        "pageTitle": "Caliphate International Schools Gusau",
+        "school.name": "Caliphate International Schools",
+        "language": "Language",
+        "lang.label": "Language",
+        "nav.home": "Home",
+        "nav.about": "About Us",
+        "nav.history": "History",
+        "nav.academics": "Academics",
+        "nav.admissions": "Admissions",
+        "nav.gallery": "Gallery",
+        "nav.contact": "Contact",
+        "location": "Gusau, Zamfara State, Nigeria",
+        "hero.tagline": "Building Future Leaders Through Quality Education, Discipline and Moral Excellence.",
+        "hero.apply": "Apply for Admission",
+        "hero.learnMore": "Learn More",
+        "about.title": "About Us",
+        "about.subtitle": "Welcome to Caliphate International Schools",
+        "about.heading": "Quality Education for a Better Future",
+        "about.p1": "Caliphate International Schools is an educational institution located in Gusau, Zamfara State. Our aim is to provide quality education in a safe, disciplined and conducive learning environment.",
+        "about.p2": "We combine academic excellence with moral training, discipline, creativity and leadership development.",
+        "feature.quality": "Quality Education",
+        "feature.teachers": "Qualified Teachers",
+        "feature.moral": "Moral Development",
+        "feature.safe": "Safe Learning Environment",
+        "history.title": "Our History",
+        "history.subtitle": "The journey of Caliphate International Schools",
+        "history.p1": "Caliphate International Schools was established 2007 with the vision of providing quality and affordable education to children in Gusau and surrounding communities.",
+        "history.p2": "Since its establishment, the school has continued to focus on academic development, good character, discipline and preparing students for the future.",
+        "history.visionTitle": "Our Vision",
+        "history.visionText": "To raise responsible, educated and morally upright future leaders who will contribute positively to society.",
+        "history.missionTitle": "Our Mission",
+        "history.missionText": "To provide quality education through effective teaching, modern learning methods and character development.",
+        "academics.title": "Academics",
+        "academics.subtitle": "Our Educational Programmes",
+        "academics.nurseryTitle": "Nursery",
+        "academics.nurseryText": "Early childhood education designed to develop foundational skills and good habits.",
+        "academics.primaryTitle": "Primary",
+        "academics.primaryText": "Strong academic foundation with emphasis on literacy, numeracy, science and character.",
+        "academics.secondaryTitle": "Secondary",
+        "academics.secondaryText": "Academic preparation that equips students for higher education and responsible citizenship.",
+        "academics.ictTitle": "ICT Education & College Of Nursing",
+        "academics.ictText": "Students are introduced to computer skills and modern technology.",
+        "admissions.title": "Admissions",
+        "admissions.subtitle": "Give your child the opportunity to learn and grow.",
+        "admissions.heading": "Admission Information",
+        "admissions.intro": "We welcome parents and guardians who wish to enrol their children at Caliphate International Schools.",
+        "admissions.processTitle": "Admission Process",
+        "admissions.step1": "Visit the school or contact the administration.",
+        "admissions.step2": "Obtain and complete the admission form.",
+        "admissions.step3": "Submit the required documents.",
+        "admissions.step4": "Attend the required assessment or interview.",
+        "admissions.step5": "Complete registration after admission.",
+        "admissions.contactBtn": "Contact School",
+        "gallery.title": "Gallery",
+        "gallery.subtitle": "Some moments from our school",
+        "contact.title": "Contact Us",
+        "contact.subtitle": "We would love to hear from you",
+        "contact.infoTitle": "School Information",
+        "contact.addressLabel": "Address:",
+        "contact.address": "Along Eastern Bye-pass, Gusau, Zamfara State, Nigeria",
+        "contact.phoneLabel": "Phone:",
+        "contact.emailLabel": "Email:",
+        "contact.facebookLabel": "Facebook:",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Your Name",
+        "contact.emailPlaceholder": "Your Email",
+        "contact.subjectPlaceholder": "Subject",
+        "contact.messagePlaceholder": "Your Message",
+        "contact.sendBtn": "Send Message",
+        "footer.rights": "All Rights Reserved."
+    },
+    ha: {
+        "pageTitle": "Makarantar Caliphate International Schools, Gusau",
+        "school.name": "Makarantar Caliphate International Schools",
+        "lang.label": "Harshe",
+        "nav.home": "Gida",
+        "nav.about": "Game da Mu",
+        "nav.history": "Tarihi",
+        "nav.academics": "Ilimi",
+        "nav.admissions": "Shiga",
+        "nav.gallery": "Hotuna",
+        "nav.contact": "Tuntuɓa",
+        "location": "Gusau, Jihar Zamfara, Najeriya",
+        "hero.tagline": "Muna Gina Masu Gaba Da Kayan Ilimi, Disiplina da Kyawun Tarbiya.",
+        "hero.apply": "Yi Rijista",
+        "hero.learnMore": "Karin Bayani",
+        "about.title": "Game da Mu",
+        "about.subtitle": "Barka da zuwa Makarantar Caliphate International Schools",
+        "about.heading": "Ilimin Inganta Ga Marubuta na Gaba",
+        "about.p1": "Makarantar Caliphate International Schools cibiri ne na ilimi da ke Gusau, Jihar Zamfara. Manufarmu ita ce samar da ilimi mai inganci a cikin yanayi mai tsaro, tsari, da dacewa.",
+        "about.p2": "Muna hada kyakkyawar ilimi da horar da akhlaqi, disiplina, kirkire-kirkire da ci gaban jagoranci.",
+        "feature.quality": "Ilimin Inganci",
+        "feature.teachers": "Malamai Masu Kwarewa",
+        "feature.moral": "Tarbiyyar Akhlaqi",
+        "feature.safe": "Muhalli Mai Tsaro",
+        "history.title": "Tarihinmu",
+        "history.subtitle": "Hanyar Makarantar Caliphate International Schools",
+        "history.p1": "Makarantar Caliphate International Schools ta fara a shekara 2007 tare da manufar samar da ilimi mai inganci da araha ga yara a Gusau da al'ummomi masu kusa.",
+        "history.p2": "Tun da aka kafata, makarantar ta ci gaba da mayar da hankali kan ci gaban ilimi, kyawawan halaye, disiplina da shirya dalibai don makoma.",
+        "history.visionTitle": "Mamanufofinmu",
+        "history.visionText": "Don haɓaka manya-manya masu ilimi, da ayyuka masu tarbiya da za su taimaka wa al'umma.",
+        "history.missionTitle": "Manufarmu",
+        "history.missionText": "Don samar da ilimi mai inganci ta hanyar koyarwa mai tasiri, hanyoyin ilimi na zamani da ci gaban halaye.",
+        "academics.title": "Ilimi",
+        "academics.subtitle": "Shirye-shiryenmu na Ilimi",
+        "academics.nurseryTitle": "Karamar Makaranta",
+        "academics.nurseryText": "Ilimin yara na farko da ake tsara don haɓaka basira da kyawawan al'adu.",
+        "academics.primaryTitle": "Makarantar Firamare",
+        "academics.primaryText": "Tushe mai ƙarfi a karatun rubutu, lissafi, kimiyya da halaye.",
+        "academics.secondaryTitle": "Makarantar Sakandare",
+        "academics.secondaryText": "Shirye-shiryen ilimi wanda ke shirya dalibai don ilimi mai ƙarfi da aikin jama'a.",
+        "academics.ictTitle": "IT da Kwalejin Nursing",
+        "academics.ictText": "Dalibai suna koyo ƙwarewar kwamfuta da fasahar zamani.",
+        "admissions.title": "Shiga",
+        "admissions.subtitle": "Bada damar yaro ya koyi da girma.",
+        "admissions.heading": "Bayanin Shiga",
+        "admissions.intro": "Muna maraba da iyaye da masu kula da yara da ke son yin rajista a Makarantar Caliphate International Schools.",
+        "admissions.processTitle": "Tsarin Shiga",
+        "admissions.step1": "Ziyarci makaranta ko tuntubi ma'aikata.",
+        "admissions.step2": "Samu da cika fom din shiga.",
+        "admissions.step3": "Gabatar da takardun da ake bukata.",
+        "admissions.step4": "Halartar gwaji ko tattaunawa da ake bukata.",
+        "admissions.step5": "Kammala rajista bayan shiga.",
+        "admissions.contactBtn": "Tuntuɓi Makaranta",
+        "gallery.title": "Hotuna",
+        "gallery.subtitle": "Wasu lokuta a makarantar mu",
+        "contact.title": "Tuntuɓa Mu",
+        "contact.subtitle": "Muna son jin muku",
+        "contact.infoTitle": "Bayani na Makaranta",
+        "contact.addressLabel": "Adireshi:",
+        "contact.address": "Along Eastern Bye-pass, Gusau, Jihar Zamfara, Najeriya",
+        "contact.phoneLabel": "Wayar:",
+        "contact.emailLabel": "Imel:",
+        "contact.facebookLabel": "Facebook:",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Sunanka",
+        "contact.emailPlaceholder": "Imel din ku",
+        "contact.subjectPlaceholder": "Batun",
+        "contact.messagePlaceholder": "Saƙon ku",
+        "contact.sendBtn": "Aika Saƙo",
+        "footer.rights": "Duka hakki an kiyaye su."
+    },
+    ig: {
+        "pageTitle": "Caliphate International Schools, Gusau",
+        "school.name": "Caliphate International Schools",
+        "lang.label": "Asusu",
+        "nav.home": "Ụlọ",
+        "nav.about": "Banyere Anyi",
+        "nav.history": "Akụkọ",
+        "nav.academics": "Nkuzi",
+        "nav.admissions": "Nnweta",
+        "nav.gallery": "Foto",
+        "nav.contact": "Kpọtụ",
+        "location": "Gusau, Steeti Zamfara, Naijiria",
+        "hero.tagline": "Na-ewu ndị nduzi n'ọdịnihu site na agụmakwụkwọ dị elu, ụkpụrụ, na ụkpụrụ omume.",
+        "hero.apply": "Banye Nnweta",
+        "hero.learnMore": "Mata Ọzọ",
+        "about.title": "Banyere Anyi",
+        "about.subtitle": "Nnọọ na Caliphate International Schools",
+        "about.heading": "Nkuzi Dị Elu Maka Ọdịnihu Ka mma",
+        "about.p1": "Caliphate International Schools bụ ụlọ akwụkwọ dị na Gusau, Steeti Zamfara. Ebumnuche anyị bụ ịmepụta agụmakwụkwọ dị elu n'ọhụụ dị nche, n'usoro, na nkwado maka mmụta.",
+        "about.p2": "Anyi na-ejikọta uto agụmakwụkwọ na ọzụzụ omume, n'usoro, okike, na mmepe nduzi.",
+        "feature.quality": "Nkuzi Dị Elu",
+        "feature.teachers": "Nkuzi ndị Kwesiri Ike",
+        "feature.moral": "Mmepe Ọmume",
+        "feature.safe": "Mgbede Nchedo",
+        "history.title": "Akụkọ Anyi",
+        "history.subtitle": "Ụzọ Caliphate International Schools",
+        "history.p1": "Caliphate International Schools malite na 2007 site na ebumnuche ime ka agụmakwụkwọ dị mma na ọnụ ahịa dị mma maka ụmụaka na Gusau na gburugburu.",
+        "history.p2": "Kemgbe ọ malitere, ụlọ akwụkwọ ahụ gara n'ihu na-elekwasị anya n'itule mmụta, omume ọma, n'usoro, na ịkwado ụmụ akwụkwọ maka ọdịnihu.",
+        "history.visionTitle": "Ebumnuche Anyi",
+        "history.visionText": "Ize ụmụ amaala, agụmakwụkwọ, na ndị na-eme ihe ọma ga-arụ ọrụ maka obodo.",
+        "history.missionTitle": "Nnukwu Mgbalị Anyi",
+        "history.missionText": "Iji mepụta agụmakwụkwọ dị elu site n'ịkuziri nke ọma, ụzọ mmụta ọgbara ọhụrụ na mmepe agwa.",
+        "academics.title": "Nkuzi",
+        "academics.subtitle": "Atụmatụ Agụmakwụkwọ Anyi",
+        "academics.nurseryTitle": "Nkọcha Nwa",
+        "academics.nurseryText": "Nkuzi ụmụaka na-eme ka ọzụzụ ntọala na ịma mma dị elu.",
+        "academics.primaryTitle": "Prọmarị",
+        "academics.primaryText": "Ntọala agụmakwụkwọ siri ike na ide ihe, mgbakọ, sayensị na agwa.",
+        "academics.secondaryTitle": "Sekọndrị",
+        "academics.secondaryText": "Nkwado agụmakwụkwọ nke na-akwado ụmụaka maka agụmakwụkwọ dị elu na ọrụ obodo.",
+        "academics.ictTitle": "ICT na Kọleji Nursing",
+        "academics.ictText": "Ụmụ akwụkwọ na-amụta kọmputa na teknụzụ ọh ugbua.",
+        "admissions.title": "Nnweta",
+        "admissions.subtitle": "Nye nwa gị ohere ịmụta na ịtoju.",
+        "admissions.heading": "Ozi Nnweta",
+        "admissions.intro": "Anyi na-anabata nne na nna na ndị nlekọta chọrọ ịdebanye ụmụ ha na Caliphate International Schools.",
+        "admissions.processTitle": "Usoro Nnweta",
+        "admissions.step1": "Bịaruo ụlọ akwụkwọ ma ọ bụ kpọtụ ndị ọrụ.",
+        "admissions.step2": "Nweta ma dejupụta fomu nnweta.",
+        "admissions.step3": "Nyefee akwụkwọ ndị achọrọ.",
+        "admissions.step4": "Bịa na nnwale ma ọ bụ ajụjụ.",
+        "admissions.step5": "Kwụsị ndebanye aha mgbe nnweta gasịrị.",
+        "admissions.contactBtn": "Kpọtụ Ụlọ Akwụkwọ",
+        "gallery.title": "Foto",
+        "gallery.subtitle": "Otu ihe ụfọdụ na ụlọ akwụkwọ anyi",
+        "contact.title": "Kpọtụ Anyi",
+        "contact.subtitle": "Anyi ga-amasị ịntanetụ",
+        "contact.infoTitle": "Ozi Ụlọ Akwụkwọ",
+        "contact.addressLabel": "Nkeji:",
+        "contact.address": "Along Eastern Bye-pass, Gusau, Steeti Zamfara, Naijiria",
+        "contact.phoneLabel": "Ekwe:",
+        "contact.emailLabel": "Email:",
+        "contact.facebookLabel": "Facebook:",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Aha Gi",
+        "contact.emailPlaceholder": "Email Gi",
+        "contact.subjectPlaceholder": "Isiokwu",
+        "contact.messagePlaceholder": "Ozi Gi",
+        "contact.sendBtn": "Zipu Ozi",
+        "footer.rights": "Nnwere onwe niile echedi." 
+    },
+    yo: {
+        "pageTitle": "Caliphate International Schools, Gusau",
+        "school.name": "Caliphate International Schools",
+        "lang.label": "Yaroba",
+        "nav.home": "Bai",
+        "nav.about": "Manga",
+        "nav.history": "Tarihi",
+        "nav.academics": "Yaɗa",
+        "nav.admissions": "Kure",
+        "nav.gallery": "Kantuna",
+        "nav.contact": "Kɔra",
+        "location": "Gusau, Zamfara State, Nijeriya",
+        "hero.tagline": "Tawun kan ke dogoro a yaadà, koyìn da himma da bògàru.",
+        "hero.apply": "Kure ɗaɗa",
+        "hero.learnMore": "Kó kàndà",
+        "about.title": "Manga",
+        "about.subtitle": "Mabɔkà Caliphate International Schools",
+        "about.heading": "Koyìn Kwakwalna Nyi Karamna",
+        "about.p1": "Caliphate International Schools na Gusau, Zamfara State. A aɗa maɗa ka koyìn daɗa a aɗa nasara, biała, da goroŋa.",
+        "about.p2": "A gyàa koyìn da kàma, ɗaɗar, jirbìn, da kàwun yahayya.",
+        "feature.quality": "Koyìn Kura",
+        "feature.teachers": "Màalamai Ɓaɗi",
+        "feature.moral": "Kawun Ɓiiri",
+        "feature.safe": "Wula Ghongodo",
+        "history.title": "Tarihi",
+        "history.subtitle": "Kòra Caliphate International Schools",
+        "history.p1": "Caliphate International Schools yan 2007 nà wàyam koyìn daɗa ga yara a Gusau da gàruma gidankàr.",
+        "history.p2": "Tun nàn, makaranta ta cigaba da jirbìn koyìn, halin daɗa, biala, da kuwan yara na gaba.",
+        "history.visionTitle": "Nanchin",
+        "history.visionText": "Muyi yara daɗa, daɗa da halin daɗa wanda za su taimaka al'umma.",
+        "history.missionTitle": "Ayyuka",
+        "history.missionText": "Muna bawa koyìn daɗa ta hanyar koyarwa, hanyoyi na zamani, da halin kirki.",
+        "academics.title": "Koyìn",
+        "academics.subtitle": "Shirikin Koyìn",
+        "academics.nurseryTitle": "Yara Keke",
+        "academics.nurseryText": "Koyìn yara na farko da ya taimaka ci gaban ƙwarewa da halayen daɗa.",
+        "academics.primaryTitle": "Firamare",
+        "academics.primaryText": "Tushe koyìn da yaɗa rubutu, lissafi, kimiyya da halaye.",
+        "academics.secondaryTitle": "Sakandare",
+        "academics.secondaryText": "Koyìn da ya shirya yara don ilimi mai girma da aiyuka na zamanni.",
+        "academics.ictTitle": "ICT da Kwalejin Nursing",
+        "academics.ictText": "Yara suna koyi amfani da kwamfuta da fasaha na zamani.",
+        "admissions.title": "Kure",
+        "admissions.subtitle": "Bai wa yaro damar koyi da girma.",
+        "admissions.heading": "Bayani Kure",
+        "admissions.intro": "Muna maraba da iyaye da masu kulawa da suna so su shigar da yara su Caliphate International Schools.",
+        "admissions.processTitle": "Tsarin Kure",
+        "admissions.step1": "Ziyarci makaranta ko tuntuɓi shugabanci.",
+        "admissions.step2": "Saya da cika takardun shigar.",
+        "admissions.step3": "Gabatar da takardu da ake bukata.",
+        "admissions.step4": "Halartar gwaji ko taron magana.",
+        "admissions.step5": "Kammala rajista bayan shigar.",
+        "admissions.contactBtn": "Tuntuɓi Makaranta",
+        "gallery.title": "Kantuna",
+        "gallery.subtitle": "Yaushe a makaranta mu",
+        "contact.title": "Kɔra Mu",
+        "contact.subtitle": "Muna so mu ji muku",
+        "contact.infoTitle": "Bayani Makaranta",
+        "contact.addressLabel": "Adireshi:",
+        "contact.address": "Along Eastern Bye-pass, Gusau, Zamfara State, Nijeriya",
+        "contact.phoneLabel": "Lambar waya:",
+        "contact.emailLabel": "Email:",
+        "contact.facebookLabel": "Facebook:",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Sunanka",
+        "contact.emailPlaceholder": "Email ɗin ku",
+        "contact.subjectPlaceholder": "Batun",
+        "contact.messagePlaceholder": "Saƙon ku",
+        "contact.sendBtn": "Aika Saƙo",
+        "footer.rights": "Duk hakki na kiyaye." 
+    },
+    ff: {
+        "pageTitle": "Caliphate International Schools, Gusau",
+        "school.name": "Caliphate International Schools",
+        "lang.label": "Fulani",
+        "nav.home": "Jaɓɓo",
+        "nav.about": "Baɗol",
+        "nav.history": "Hisɗa",
+        "nav.academics": "Naatal",
+        "nav.admissions": "Jebbunde",
+        "nav.gallery": "Diyal",
+        "nav.contact": "Tawde",
+        "location": "Gusau, Zamfara State, Nijeriya",
+        "hero.tagline": "Sofa jooni nagge mbaɗam e xamɗo, ndernangal, e jaaɓal.",
+        "hero.apply": "Ndeɓi Kabbal",
+        "hero.learnMore": "Heɗi Saggiti",
+        "about.title": "Baɗol",
+        "about.subtitle": "Wakko e Caliphate International Schools",
+        "about.heading": "Naatal Hamna Baajum",
+        "about.p1": "Caliphate International Schools e Gusau, Zamfara State. Gamoɓe men ko yilla naatol ngaandi e jam e jaaɓal, ceeɗum, e gorko.",
+        "about.p2": "Men setani naatol, dunde, jeye, e jermal.",
+        "feature.quality": "Naatol Saggal",
+        "feature.teachers": "Koyɓe Beeri",
+        "feature.moral": "Dundal Ceesal",
+        "feature.safe": "Ndegum Paaɗe",
+        "history.title": "Hisɗa",
+        "history.subtitle": "Mujja Caliphate International Schools",
+        "history.p1": "Caliphate International Schools bee ɗon 2007 e goɗin naatol goodi e koɓe e Gusau e jaabat joɗi.",
+        "history.p2": "Koo ɗum yeeso, sukko ko nan e koɗal, gorko, e yoɓe ɗa ɗon boa.",
+        "history.visionTitle": "Garta",
+        "history.visionText": "Inna koɓɓe, koɗɓe, e jaɓɓe udda gorko e komi lamndu.",
+        "history.missionTitle": "Baajum",
+        "history.missionText": "Koƴƴi naatol e koɗal darajal, tawde naatol nden ancam, e ceeɗum.",
+        "academics.title": "Naatal",
+        "academics.subtitle": "Darajaaji Naatal",
+        "academics.nurseryTitle": "Buurii",
+        "academics.nurseryText": "Naatol yarkam e ndime faw bira jomna.",
+        "academics.primaryTitle": "Primary",
+        "academics.primaryText": "Tuubbin naatol e leɗɗe, lissaafi e saynsi.",
+        "academics.secondaryTitle": "Secondary",
+        "academics.secondaryText": "Naatal beji yarkam e jaaɓal e yippu.",
+        "academics.ictTitle": "ICT e College of Nursing",
+        "academics.ictText": "Yarkam kaɗi komputa e fasahaa juɗɗo.",
+        "admissions.title": "Jebbunde",
+        "admissions.subtitle": "Hakkilo yarde e ndaw ko won arum.",
+        "admissions.heading": "Habar Jebbunde",
+        "admissions.intro": "Meni aggaawa e jaɓɓe ko yaho boɗon e Caliphate International Schools.",
+        "admissions.processTitle": "Kokaar Jebbunde",
+        "admissions.step1": "Jooni ke balɓe e maɓɓe baɗol.",
+        "admissions.step2": "Ndeɓi e jaɓa foom.",
+        "admissions.step3": "Ɓotan dogari ne e ɗam.",
+        "admissions.step4": "Hawri test or interview.",
+        "admissions.step5": "Kaatu regista ko jebbunde.",
+        "admissions.contactBtn": "Tawde Makaranta",
+        "gallery.title": "Diyal",
+        "gallery.subtitle": "Diyal e makara",
+        "contact.title": "Tawde Men",
+        "contact.subtitle": "Min yooti toɓɓe ma",
+        "contact.infoTitle": "Habar Makaranta",
+        "contact.addressLabel": "Adiresi:",
+        "contact.address": "Along Eastern Bye-pass, Gusau, Zamfara State, Nijeriya",
+        "contact.phoneLabel": "Mballum:",
+        "contact.emailLabel": "Email:",
+        "contact.facebookLabel": "Facebook:",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Mbayen laanii",
+        "contact.emailPlaceholder": "Email ma",
+        "contact.subjectPlaceholder": "Mbaake",
+        "contact.messagePlaceholder": "Baaru ma",
+        "contact.sendBtn": "Ndeɓi Baro",
+        "footer.rights": "Dum hakki saanii." 
+    },
+    fr: {
+        "pageTitle": "Caliphate International Schools Gusau",
+        "school.name": "Caliphate International Schools",
+        "lang.label": "Langue",
+        "nav.home": "Accueil",
+        "nav.about": "À propos",
+        "nav.history": "Historique",
+        "nav.academics": "Académies",
+        "nav.admissions": "Admissions",
+        "nav.gallery": "Galerie",
+        "nav.contact": "Contact",
+        "location": "Gusau, État de Zamfara, Nigéria",
+        "hero.tagline": "Former les leaders de demain grâce à une éducation de qualité, à la discipline et à l'excellence morale.",
+        "hero.apply": "Faire une demande d'admission",
+        "hero.learnMore": "En savoir plus",
+        "about.title": "À propos",
+        "about.subtitle": "Bienvenue à Caliphate International Schools",
+        "about.heading": "Une éducation de qualité pour un avenir meilleur",
+        "about.p1": "Caliphate International Schools est une institution éducative située à Gusau, dans l'État de Zamfara. Notre objectif est de fournir une éducation de qualité dans un environnement sûr, discipliné et propice à l'apprentissage.",
+        "about.p2": "Nous combinons l'excellence académique avec la formation morale, la discipline, la créativité et le développement du leadership.",
+        "feature.quality": "Éducation de qualité",
+        "feature.teachers": "Enseignants qualifiés",
+        "feature.moral": "Développement moral",
+        "feature.safe": "Environnement d'apprentissage sûr",
+        "history.title": "Notre histoire",
+        "history.subtitle": "Le parcours de Caliphate International Schools",
+        "history.p1": "Caliphate International Schools a été créée en 2007 avec la vision de fournir une éducation de qualité et abordable aux enfants de Gusau et des communautés voisines.",
+        "history.p2": "Depuis sa création, l'école a continué de se concentrer sur le développement académique, le bon caractère, la discipline et la préparation des élèves pour l'avenir.",
+        "history.visionTitle": "Notre vision",
+        "history.visionText": "Former des leaders responsables, instruits et moralement intègres qui contribueront positivement à la société.",
+        "history.missionTitle": "Notre mission",
+        "history.missionText": "Fournir une éducation de qualité grâce à un enseignement efficace, des méthodes d'apprentissage modernes et le développement du caractère.",
+        "academics.title": "Académies",
+        "academics.subtitle": "Nos programmes éducatifs",
+        "academics.nurseryTitle": "Maternelle",
+        "academics.nurseryText": "Une éducation de la petite enfance conçue pour développer des compétences fondamentales et de bonnes habitudes.",
+        "academics.primaryTitle": "Primaire",
+        "academics.primaryText": "Une base académique solide axée sur l'alphabétisation, les mathématiques, les sciences et le caractère.",
+        "academics.secondaryTitle": "Secondaire",
+        "academics.secondaryText": "Une préparation académique qui prépare les étudiants à l'enseignement supérieur et à la citoyenneté responsable.",
+        "academics.ictTitle": "Éducation informatique et collège de soins infirmiers",
+        "academics.ictText": "Les élèves sont initiés aux compétences informatiques et à la technologie moderne.",
+        "admissions.title": "Admissions",
+        "admissions.subtitle": "Offrez à votre enfant l'opportunité d'apprendre et de grandir.",
+        "admissions.heading": "Informations d'admission",
+        "admissions.intro": "Nous accueillons les parents et tuteurs qui souhaitent inscrire leurs enfants à Caliphate International Schools.",
+        "admissions.processTitle": "Processus d'admission",
+        "admissions.step1": "Rendez-vous à l'école ou contactez l'administration.",
+        "admissions.step2": "Obtenez et remplissez le formulaire d'admission.",
+        "admissions.step3": "Soumettez les documents requis.",
+        "admissions.step4": "Passez l'évaluation ou l'entretien requis.",
+        "admissions.step5": "Complétez l'inscription après l'admission.",
+        "admissions.contactBtn": "Contacter l'école",
+        "gallery.title": "Galerie",
+        "gallery.subtitle": "Quelques moments de notre école",
+        "contact.title": "Contactez-nous",
+        "contact.subtitle": "Nous aimerions avoir de vos nouvelles",
+        "contact.infoTitle": "Informations sur l'école",
+        "contact.addressLabel": "Adresse :",
+        "contact.address": "Along Eastern Bye-pass, Gusau, État de Zamfara, Nigéria",
+        "contact.phoneLabel": "Téléphone :",
+        "contact.emailLabel": "E-mail :",
+        "contact.facebookLabel": "Facebook :",
+        "contact.facebook": "Caliphate International Schools",
+        "contact.namePlaceholder": "Votre nom",
+        "contact.emailPlaceholder": "Votre e-mail",
+        "contact.subjectPlaceholder": "Objet",
+        "contact.messagePlaceholder": "Votre message",
+        "contact.sendBtn": "Envoyer le message",
+        "footer.rights": "Tous droits réservés."
+    },
+    ar: {
+        "pageTitle": "مدارس كالفات الدولية، غوسا",
+        "school.name": "مدارس كالفات الدولية",
+        "lang.label": "اللغة",
+        "nav.home": "الرئيسية",
+        "nav.about": "من نحن",
+        "nav.history": "التاريخ",
+        "nav.academics": "الأكاديميات",
+        "nav.admissions": "القبول",
+        "nav.gallery": "المعرض",
+        "nav.contact": "تواصل",
+        "location": "غوسا، ولاية زمفارة، نيجيريا",
+        "hero.tagline": "بناء قادة المستقبل من خلال تعليم عالي الجودة والانضباط والتميز الأخلاقي.",
+        "hero.apply": "قدم للقبول",
+        "hero.learnMore": "اعرف المزيد",
+        "about.title": "من نحن",
+        "about.subtitle": "مرحبًا بكم في مدارس كالفات الدولية",
+        "about.heading": "تعليم عالي الجودة لمستقبل أفضل",
+        "about.p1": "مدارس كالفات الدولية هي مؤسسة تعليمية تقع في غوسا، ولاية زمفارة. هدفنا هو توفير تعليم عالي الجودة في بيئة آمنة ومنضبطة ومناسبة للتعلم.",
+        "about.p2": "نمزج التميز الأكاديمي مع التدريب الأخلاقي والانضباط والإبداع وتنمية القيادة.",
+        "feature.quality": "تعليم ذو جودة",
+        "feature.teachers": "معلمون مؤهلون",
+        "feature.moral": "تنمية أخلاقية",
+        "feature.safe": "بيئة تعليمية آمنة",
+        "history.title": "تاريخنا",
+        "history.subtitle": "رحلة مدارس كالفات الدولية",
+        "history.p1": "تم إنشاء مدارس كالفات الدولية عام 2007 بهدف توفير تعليم عالي الجودة وبأسعار مناسبة للأطفال في غوسا والمجتمعات المحيطة.",
+        "history.p2": "منذ تأسيسها، واصلت المدرسة التركيز على التطوير الأكاديمي والخلق الطيب والانضباط وإعداد الطلاب للمستقبل.",
+        "history.visionTitle": "رؤيتنا",
+        "history.visionText": "لتنشئة قادة مسؤولين ومتعلمين وأخلاقيين سيُسهمون بشكل إيجابي في المجتمع.",
+        "history.missionTitle": "مهمتنا",
+        "history.missionText": "توفير تعليم عالي الجودة من خلال تدريس فعال وأساليب تعلم حديثة وتنمية الشخصية.",
+        "academics.title": "الأكاديميات",
+        "academics.subtitle": "برامجنا التعليمية",
+        "academics.nurseryTitle": "روضة",
+        "academics.nurseryText": "تعليم الطفولة المبكرة مصمم لتطوير المهارات الأساسية والعادات الجيدة.",
+        "academics.primaryTitle": "ابتدائي",
+        "academics.primaryText": "أساس أكاديمي قوي مع التركيز على القراءة والكتابة والرياضيات والعلوم والسلوك.",
+        "academics.secondaryTitle": "ثانوي",
+        "academics.secondaryText": "إعداد أكاديمي يجهز الطلاب للتعليم العالي والمواطنة المسؤولة.",
+        "academics.ictTitle": "تعليم الكمبيوتر وكلية التمريض",
+        "academics.ictText": "يتم تقديم الطلاب لمهارات الحاسوب والتقنيات الحديثة.",
+        "admissions.title": "القبول",
+        "admissions.subtitle": "امنح طفلك فرصة للتعلم والنمو.",
+        "admissions.heading": "معلومات القبول",
+        "admissions.intro": "نرحب بالوالدين ومقدمي الرعاية الذين يرغبون في تسجيل أطفالهم في مدارس كالفات الدولية.",
+        "admissions.processTitle": "عملية القبول",
+        "admissions.step1": "قم بزيارة المدرسة أو تواصل مع الإدارة.",
+        "admissions.step2": "احصل على نموذج القبول وأكمله.",
+        "admissions.step3": "قدّم المستندات المطلوبة.",
+        "admissions.step4": "حضر التقييم أو المقابلة المطلوبة.",
+        "admissions.step5": "أكمل التسجيل بعد القبول.",
+        "admissions.contactBtn": "تواصل مع المدرسة",
+        "gallery.title": "المعرض",
+        "gallery.subtitle": "بعض اللحظات من مدرستنا",
+        "contact.title": "تواصل معنا",
+        "contact.subtitle": "نود أن نسمع منك",
+        "contact.infoTitle": "معلومات المدرسة",
+        "contact.addressLabel": "العنوان:",
+        "contact.address": "على طريق شرق bypass، غوسا، ولاية زمفارة، نيجيريا",
+        "contact.phoneLabel": "الهاتف:",
+        "contact.emailLabel": "البريد الإلكتروني:",
+        "contact.facebookLabel": "فيسبوك:",
+        "contact.facebook": "مدارس كالفات الدولية",
+        "contact.namePlaceholder": "اسمك",
+        "contact.emailPlaceholder": "بريدك الإلكتروني",
+        "contact.subjectPlaceholder": "الموضوع",
+        "contact.messagePlaceholder": "رسالتك",
+        "contact.sendBtn": "إرسال الرسالة",
+        "footer.rights": "جميع الحقوق محفوظة."
+    }
+};
+
+const languageSelect = document.getElementById("languageSelect");
+const translatableElements = document.querySelectorAll("[data-i18n]");
+const translatablePlaceholders = document.querySelectorAll("[data-placeholder]");
+
+function applyTranslations(lang) {
+    const selected = translations[lang] || translations.en;
+    document.documentElement.lang = lang;
+    document.title = selected["pageTitle"] || translations.en["pageTitle"];
+
+    translatableElements.forEach(function(element) {
+        const key = element.getAttribute("data-i18n");
+        if (selected[key]) {
+            element.textContent = selected[key];
+        }
+    });
+
+    translatablePlaceholders.forEach(function(element) {
+        const key = element.getAttribute("data-placeholder");
+        if (selected[key]) {
+            element.placeholder = selected[key];
+        }
+    });
+
+    if (languageSelect) {
+        languageSelect.value = lang;
+    }
+
+    localStorage.setItem("preferredLanguage", lang);
+}
+
+if (languageSelect) {
+    const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+    languageSelect.value = savedLanguage;
+
+    languageSelect.addEventListener("change", function(event) {
+        applyTranslations(event.target.value);
+    });
+
+    applyTranslations(savedLanguage);
+}
+
+
+// ============================
+// CONTACT FORM
+// ============================
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+
+        alert(
+            "Thank you, " +
+            name +
+            "! Your message has been received."
+        );
+
+        contactForm.reset();
+    });
+}
+
+
+// ============================
+// GALLERY IMAGE CLICK
+// ============================
+
+const galleryImages = document.querySelectorAll(".gallery img");
+
+galleryImages.forEach(function(image) {
+    image.addEventListener("click", function() {
+        window.open(image.src, "_blank");
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"}]}                                                                                    
